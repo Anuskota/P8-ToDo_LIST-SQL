@@ -1,0 +1,15 @@
+{
+    "name": "ana/p8-to-do_list-sql",
+    "autoload": {
+        "psr-4": {
+            "Ana\\P8ToDoListSql\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anuskota",
+            "email": "anamangada.dev@gmail.com"
+        }
+    ],
+    "require": {}
+}
