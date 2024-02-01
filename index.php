@@ -26,10 +26,36 @@
             </div>
         </div>
     </form>
+    <!-- getdata -->
+    <?php
+    include "conexion.php";
+    $rawData = mysqli_query($conecction, "SELECT * FROM `todo-list`");
+
+    ?>
     <div class="container">
         <div class="col-8 bg-white m-auto mt-3">
             <table class="table">
                 <tbody>
+                    <?php
+
+                    while ($row = mysqli_fetch_array($rawData)) {
+                    ?>
                     <tr>
-                        <td>Desarrolla con Anuska</td>
-                        <td style="width: 10%"> <a href="">Borrar</a></td>git add .
+                        <td> <?php echo $row['id'] ?> </td>
+                        <td> <?php echo $row['list'] ?> </td>
+                        <td style="width: 10%"> <a href="delete.php? ID=<?php echo $row['id'] ?>"
+                                class="btn btn-outline-danger">Borrar</a></td>
+                        <td style=" width: 10%"><a href="update.php? ID=<?php echo $row['id'] ?>"
+                                class="btn btn-outline-success">Editar</a></td>
+
+                    </tr>
+                    <?php
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
