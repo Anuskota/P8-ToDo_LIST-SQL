@@ -13,6 +13,12 @@ equipos de trabajo, tiene como objetivo principal facilitar la organización,
 seguimiento y cumplimiento de tareas y proyectos en un entorno digital.
 
 
+## 📺 ScreenShot
+
+
+![Alt text](image.png)
+
+
 ## 🖥️ Guía para su  instalación 
 
 1. Lo primero es necesario tener instalado Xampp.Si ya lo tienes instalado puedes iniciar el servidor web con Apache, si no es así realiza su descarga en : https://www.apachefriends.org
