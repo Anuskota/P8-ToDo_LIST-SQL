@@ -13,7 +13,7 @@
 
 <?php
 
-include "conexion.php";
+include "../Model/conexion.php";
 $id = $_GET['ID'];
 $Rdata = mysqli_query($conecction, "SELECT * FROM `todo-list` WHERE Id= $id");
 $data = mysqli_fetch_array($Rdata);
@@ -26,7 +26,7 @@ $data = mysqli_fetch_array($Rdata);
             <div class="row justify-content-center m-auto shadow bg-white mt-3 py-3 col-md-6">
                 <h3 class="text-center text-primary font-monospace">Update</h3>
                 <div class="col-10">
-                    <input type="text" value="<?php echo $data['list'] ?> " name="list" class="form-control">
+                    <input type="text" required value="<?php echo $data['list'] ?> " name="list" class="form-control">
                 </div>
                 <div class="col-2">
                     <button class="btn btn-outline-primary">Update</button>

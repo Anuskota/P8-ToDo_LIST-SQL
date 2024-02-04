@@ -1,7 +1,7 @@
-<?php 
-include "conexion.php";
+<?php
+include "../Model/conexion.php";
 $List = $_POST['list'];
 $ID = $_POST['id'];
 mysqli_query($conecction," UPDATE `todo-list` SET `list`= '$List' WHERE id=$ID ");
-header("location:index.php");
+header("location:../index.php");
 ?>

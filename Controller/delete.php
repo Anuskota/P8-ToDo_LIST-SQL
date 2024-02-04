@@ -1,6 +1,6 @@
 <?php
-include "conexion.php";
+include "../Model/conexion.php";
 echo $id = $_GET['ID'];
 mysqli_query($conecction, "DELETE FROM `todo-list` WHERE Id = $id ");
-header("location:index.php");
+header("location:../index.php");
 ?>
